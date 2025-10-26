@@ -1,38 +1,251 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Home Page */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.homeBody {
+  background-image: url("./assets/home-bg2.png");
+  /* background-color: rgb(24, 24, 24); */
+  background-size: cover;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.App {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Title {
+  margin-top: 4%; 
+  text-align: center;
+  justify-content: center;
+  padding: 3%;
+  
+}
+
+.Title h1 {
+  font-size: 100px;
+  text-shadow: 2px 2px black;
+  color: rgb(255, 255, 255);
+  font-family: "Archivo Black", sans-serif;
+  font-style: italic;
+}
+
+.MenuLink a {
+  /* align-items: center;
+  justify-content: center; */
+  display: block;
+  text-decoration: none;
+  padding: 1%;
+  /* padding-left: auto;
+  padding-right: auto; */
+  text-align: center;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Button1 {
+  background-color: rgb(31, 153, 0);
   color: white;
+  font-family: "Inter", sans-serif;
+  box-shadow: 3px 3px rgb(49, 49, 49);
+  width: 20%;
+  margin-bottom: 2%;
+  border: 2px white solid;
 }
 
-.App-link {
-  color: #61dafb;
+.Button2 {
+  background-color: rgb(209, 143, 0);
+  color: white;
+  font-family: "Inter", sans-serif;
+  box-shadow: 3px 3px rgb(49, 49, 49);
+  width: 20%;
+  border: 2px white solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Button1:hover {
+  background-color: rgb(25, 122, 0);
 }
+
+.Button2:hover {
+  background-color: rgb(155, 106, 0);
+}
+
+/* Guide Page */
+
+.guideBody {
+  background-image: url("./assets/home-bg2.png");
+  font-family: "Inter", sans-serif;
+  margin: 2%;
+}
+
+.backPage {
+  /* margin: 1%;
+  padding: 1%;
+  border: 1px solid white; */
+  border: 1px white solid;
+  width: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.BackButton {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 2%;
+  margin: 2%;
+  text-align: center;
+  display: block;
+}
+
+.backPage a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.guideTitle {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 3%;
+}
+
+#guideContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  margin: 1%;
+  gap: 3%;
+}
+.article1 {
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  flex: 30%;
+  border: 2px solid rgb(141, 141, 141);
+  border-radius: 10px;
+  background-color: white;
+  border: 3px solid black;
+}
+.article1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+.article1 p {
+  width: 90%;
+  margin: auto;
+}
+
+.article2 {
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  flex: 30%;
+  border: 2px solid rgb(141, 141, 141);
+  border-radius: 10px;
+  background-color: white;
+  border: 3px solid black;
+}
+.article2 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+.article2 p {
+  width: 90%;
+  margin: auto;
+}
+
+.article3 {
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  flex: 30%;
+  border: 2px solid rgb(141, 141, 141);
+  border-radius: 10px;
+  background-color: white;
+  border: 3px solid black;
+}
+.article3 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+.article3 p {
+  width: 90%;
+  margin: auto;
+}
+
+/* Main Page */
+
+.mainBody {
+  /* background-color: black; */
+  padding: 1%;
+  margin: 1%;
+}
+
+#prevPage {
+  border: 1px white solid;
+  width: 10%;
+  align-items: center;
+  justify-content: center;
+  
+}
+#prevPage a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 2%;
+  margin: 2%;
+  text-align: center;
+  display: block;
+}
+#prevPage a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#mainContent {
+  /* display: block; */
+  margin-top: 8%;
+  align-items: center;
+  justify-content: center;
+  padding: 9%;
+}
+
+#mainContent h1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  margin: auto;
+  display: block;
+  animation: fade 900ms linear infinite alternate;
+}
+
+@keyframes fade {
+  from { color: black; }
+  to { color: white; }
+}
+
+

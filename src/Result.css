@@ -1,0 +1,56 @@
+#container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    /* border: 1px solid white; */
+    box-sizing: border-box;
+    margin-top: 15%;
+}
+
+.resultText {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: "Inter", sans-serif;
+    display: block;
+
+}
+
+.resultButton {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1%;
+    margin: 1%;
+}
+
+.resultButton a {
+    gap: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+}
+.retryButton {
+    border: 1px solid white;
+    padding: 1%;
+    width: 10%;
+    margin: 1%;
+}
+.exitButton {
+    border: 1px solid white;
+    padding: 1%;
+    width: 10%;
+    margin: 1%;
+}
+.retryButton:hover {
+    background-color: white;
+    color: black;
+}
+.exitButton:hover {
+    background-color: white;
+    color: black;
+}
